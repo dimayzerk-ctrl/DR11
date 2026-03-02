@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #000;
+    }
+
+    #mobile-block {
+      display: none;
+      width: 100%;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    img {
+      display: block;
+      width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+    }
+
+    @media (min-width: 768px) {
+      img { display: none; }
+      #mobile-block { display: flex; }
+    }
+  </style>
+</head>
+<body>
+  <div id="mobile-block">
+    📵 Этот сайт доступен только с телефона
+  </div>
+  <img src="Comic.jpg" alt="" />
+</body>
+</html>
